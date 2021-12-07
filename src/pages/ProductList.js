@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import Announcement from "../components/Announcement";
-import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
+import Announcement from "../components/Announcement";
 import Products from "../components/Products";
 import Newsletter from "../components/Newsletter";
+import Footer from "../components/Footer";
 import { mobile } from "../responsive";
 import { useLocation } from "react-router";
 import { useState } from "react";
@@ -34,9 +34,8 @@ const FilterText = styled.span`
 const Select = styled.select`
   padding: 10px;
   margin-right: 20px;
-  ${mobile({ margin: "10px 1px" })}
+  ${mobile({ margin: "10px 0px" })}
 `;
-
 const Option = styled.option``;
 
 const ProductList = () => {
@@ -57,7 +56,7 @@ const ProductList = () => {
     <Container>
       <Navbar />
       <Announcement />
-      <Title>Dresses</Title>
+      <Title>{cat}</Title>
       <FilterContainer>
         <Filter>
           <FilterText>Filter Products:</FilterText>
