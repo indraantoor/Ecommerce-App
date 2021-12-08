@@ -163,7 +163,7 @@ const SummaryButton = styled.button`
 const Cart = () => {
   const cart = useSelector((state) => state.cart);
   const [stripeToken, setStripeToken] = useState(null);
-  let history = useNavigate();
+  let navigate = useNavigate();
   const onToken = (token) => {
     setStripeToken(token);
   };
@@ -179,11 +179,11 @@ const Cart = () => {
           amount: 500,
           description: "Software development services",
         });
-        history("/success", { data: res.data });
+        navigate("/success", { state: res.data });
       } catch {}
     };
     stripeToken && makeRequest();
-  }, [stripeToken, cart.total, history]);
+  }, [stripeToken, cart.total, navigate]);
 
   return (
     <Container>
