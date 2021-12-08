@@ -179,7 +179,12 @@ const Cart = () => {
           amount: 500,
           description: "Software development services",
         });
-        navigate("/success", { state: res.data });
+        navigate("/success", {
+          state: {
+            stripeDate: res.data,
+            products: cart,
+          },
+        });
       } catch {}
     };
     stripeToken && makeRequest();
