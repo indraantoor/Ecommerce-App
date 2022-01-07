@@ -1,3 +1,6 @@
 [submodule "Ecommerce-App-Admin-Dashboard"]
 	path = Ecommerce-App-Admin-Dashboard
 	url = https://github.com/indraantoor/Ecommerce-App-Admin-Dashboard.git
+[submodule "Ecommerce-App-API"]
+	path = Ecommerce-App-API
+	url = https://github.com/indraantoor/Ecommerce-App-API.git
