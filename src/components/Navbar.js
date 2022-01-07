@@ -65,7 +65,7 @@ const Right = styled.div`
 const MenuItem = styled.div`
   font-size: 14px;
   cursor: pointer;
-  margin-left: 20px;
+  margin-left: 30px;
   ${mobile({ fontSize: "12px", marginLeft: "10px" })}
 `;
 
