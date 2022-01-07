@@ -86,6 +86,7 @@ The front end does not directly talk with the database but rather talks to the b
 - CryptoJs
 - Stripe API
 - Nodemon
+- Firebase
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
