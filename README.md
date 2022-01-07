@@ -11,14 +11,12 @@
   <p align="center">
     A place where you can buy and sell any items related to clothes, accessories and much more while earning money from it at one place. It has all the features to help you keep looking the best version of yourself always.
     <br />
-    <a href="https://github.com/indraantoor/Crypto-Planet/blob/main/README.md"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/indraantoor/Ecommerce-App/blob/main/README.md"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://crypto-planet-app.herokuapp.com/">View Demo - Heroku</a>
+    <a href="https://github.com/indraantoor/Ecommerce-App/issues">Report Bug</a>
     ·
-    <a href="https://github.com/indraantoor/Crypto-Planet/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/indraantoor/Crypto-Planet/issues">Request Feature</a>
+    <a href="https://github.com/indraantoor/Ecommerce-App/issues">Request Feature</a>
   </p>
 </div>
 
@@ -110,14 +108,29 @@ This is an example of how to list things you need to use the software and how to
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/indraantoor/Pet-Adoption-ReactApp.git
+   git clone https://github.com/indraantoor/Ecommerce-App
    ```
-2. Install NPM packages
+   ```sh
+   git clone https://github.com/indraantoor/Ecommerce-App-API
+   ```
+   ```sh
+   git clone https://github.com/indraantoor/Ecommerce-App-Admin-Dashboard
+   ```
+2. Install NPM packages In All Of These Cloned Directories
    ```sh
    npm install
    ```
 3. Run the application
    ```sh
+   Navigate To The API Directory
+   npm start
+   ```
+   ```sh
+   Navigate To The Admin Dashboard Directory
+   npm start
+   ```
+   ```sh
+   Navigate To The Ecommerce Directory
    npm start
    ```
 
@@ -217,11 +230,35 @@ This is the page where a new user can register themselves in order to sell the i
 
 ## Admin Dashboard
 
+### Overview Page
+
+In this page you can see all the reports about the revenue and a chart along with a track of latest transactions and user just from your homepage.
+
+<img src="https://i.ibb.co/x7JNfPp/10.png" alt="10" border="0" />
+
+### Manage Products Page
+
+Here you can manage all of the listed products. You can delete and edit all of the information about the products such as if it is in stock or not, price, image and much more.
+
+<img src="https://i.ibb.co/3m7ZkPn/11.png" alt="11" border="0" />
+
+### Transactions Page
+
+Here you can see all the information about the transaction that have taken place on the platform.
+
+<img src="https://i.ibb.co/Wk0s0hx/12.png" alt="12" border="0" />
+
+### Reports Page
+
+Here you can see the reports of the revenue and other statistics.
+
+<img src="https://i.ibb.co/7gqtR5P/13.png" alt="13" border="0" />
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ## Roadmap
 
-See the [open issues](https://github.com/indraantoor/Crypto-Planet/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/indraantoor/Ecommerce-App/issues) for a list of proposed features (and known issues).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -241,6 +278,6 @@ Contributions are what make the open source community such an amazing place to b
 
 ## Contact
 
-Project Link: [https://github.com/indraantoor/Crypto-Planet](https://github.com/indraantoor/Crypto-Planet)
+Project Link: [https://github.com/indraantoor/Ecommerce-App](https://github.com/indraantoor/Ecommerce-App)
 
 <a href="https://in.linkedin.com/in/indraantoor"><img src="https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555" /></a>
