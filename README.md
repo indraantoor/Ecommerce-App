@@ -159,6 +159,64 @@ It dynamically updates itself when the data gets updated.
 
 <img src="https://i.ibb.co/KDdPYVv/4.png" alt="4" border="0" />
 
+### Product Page
+
+This page includes the details of that product which a user wants to see or may be interested to buy the product.
+
+The details include various information like the title of the product, the description of the product and also the price of the product.
+
+A user can add that product by selecting the size and the quantity of the item.
+
+The cart icon will update accordingly, thus reflecting the changes.
+
+<img src="https://i.ibb.co/5s5gvJ3/5.png" alt="5" border="0" />
+
+### Cart Page
+
+This page includes all the items that a user wishes to buy and displays it as a short summary.
+
+It calculates the price and lets the user know what all things they have added in their cart.
+
+#### Checkout Feature
+
+This is the feature which provides the user the ability to purchase the items which they have added in the cart.
+
+It features all the details the user should know before buying the items which they have added in their cart.
+
+Details include taxes, shipping cost and the total cost of the items.
+
+<img src="https://i.ibb.co/8KnKTGr/6.png" alt="6" border="0" />
+
+### Stripe API Integration To Handle Payments
+
+To handle the payment procedure we have used Stripe's API.
+
+Stripe handles all the transactions from end to end with encryption without having to worry about implementing a dedicated payment service into the application.
+
+Thus providing a faster way for developers to develop powerful applications without having to worry about things which they shouldn't and focus on the things that matter inside the application.
+
+As a payment processor, Stripe allows business owners to accept payments from credit and debit cards and processes those payments.
+
+Using Stripe, businesses can also accept payments from mobile wallets and buy now, pay later services.
+
+Stripe also supports payments in a variety of currencies.
+
+<img src="https://i.ibb.co/m5P6L90/7.png" alt="7" border="0" />
+
+### Login Page
+
+This is the page where the user will enter their details in order to log into the web application and manage their data.
+
+<img src="https://i.ibb.co/C5Md6vq/8.png" alt="8" border="0" />
+
+### Register Page
+
+This is the page where a new user can register themselves in order to sell the items on the Ecommerce Platform with the images details and all the management of their products.
+
+<img src="https://i.ibb.co/x1rthhn/9.png" alt="9" border="0" />
+
+## Admin Dashboard
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ## Roadmap
