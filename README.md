@@ -16,7 +16,7 @@
     <br />
     <a href="https://github.com/indraantoor/Ecommerce-App/issues">Report Bug</a>
     ·
-    <a href="https://github.com/indraantoor/Ecommerce-App/issues">Request Feature</a>
+    <a href="https://github.com/indraantoor/Ecommerce-App/issues">Request A Feature</a>
   </p>
 </div>
 
