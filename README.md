@@ -6,7 +6,7 @@
 <br />
 <div align="center">
   <h1 align="center">Ecommerce Web Application</h1>
-    <img src="https://i.ibb.co/QXGhjTc/1.png" alt="1" border="0" />
+    <img src="https://i.ibb.co/vJj46ny/1.png" alt="1" border="0" />
 
   <p align="center">
     A place where you can buy and sell any items related to clothes, accessories and much more while earning money from it at one place. It has all the features to help you keep looking the best version of yourself always.
@@ -48,7 +48,7 @@
 
 ## About The Project
 
-<img src="https://i.ibb.co/QXGhjTc/1.png" alt="1" border="0" />
+<img src="https://i.ibb.co/vJj46ny/1.png" alt="1" border="0" />
 
 This is an Ecommerce platform where a user can register themselves to sell items on the platform and track the performance of their products to deliver products for better profits.
 
@@ -147,7 +147,7 @@ It also includes a navbar, along with various elements on the home page which wh
 
 The web application is fully responsive and can work on various devices and screen sizes.
 
-<img src="https://i.ibb.co/QXGhjTc/1.png" alt="1" border="0" />
+<img src="https://i.ibb.co/vJj46ny/1.png" alt="1" border="0" />
 
 ### Product Listings Section
 
@@ -221,7 +221,7 @@ Stripe also supports payments in a variety of currencies.
 
 This is the page where the user will enter their details in order to log into the web application and manage their data.
 
-<img src="https://i.ibb.co/C5Md6vq/8.png" alt="8" border="0" />
+<img src="https://i.ibb.co/dk2mTjb/8.png" alt="8" border="0" />
 
 ### Register Page
 
