@@ -9,6 +9,7 @@ import StripeCheckout from "react-stripe-checkout";
 import { useState, useEffect } from "react";
 import { userRequest } from "../requestMethods";
 import { useNavigate } from "react-router";
+import { Link } from "react-router-dom";
 
 const KEY = process.env.REACT_APP_STRIPE;
 
@@ -164,6 +165,7 @@ const Cart = () => {
   const cart = useSelector((state) => state.cart);
   const [stripeToken, setStripeToken] = useState(null);
   let navigate = useNavigate();
+
   const onToken = (token) => {
     setStripeToken(token);
   };
@@ -185,10 +187,12 @@ const Cart = () => {
             products: cart,
           },
         });
-      } catch {}
+      } catch (error) {
+        console.log(error);
+      }
     };
     stripeToken && makeRequest();
-  }, [stripeToken, cart.total, navigate]);
+  }, [stripeToken, cart.total, navigate, cart]);
 
   return (
     <Container>
@@ -197,7 +201,9 @@ const Cart = () => {
       <Wrapper>
         <Title>YOUR BAG</Title>
         <Top>
-          <TopButton>CONTINUE SHOPPING</TopButton>
+          <Link to="/products">
+            <TopButton>CONTINUE SHOPPING</TopButton>
+          </Link>
           <TopTexts>
             <TopText>Shopping Bag(2)</TopText>
             <TopText>Your Wishlist(0)</TopText>
@@ -207,7 +213,7 @@ const Cart = () => {
         <Bottom>
           <Info>
             {cart.products.map((product) => (
-              <Product>
+              <Product key={product._id}>
                 <ProductDetail>
                   <Image src={product.img} />
                   <Details>
@@ -257,7 +263,7 @@ const Cart = () => {
             </SummaryItem>
             <StripeCheckout
               name="Indraan Shop"
-              image="https://avatars.githubusercontent.com/u/1486366?v=4"
+              image="https://avatars.githubusercontent.com/u/64259328?v=4"
               billingAddress
               shippingAddress
               description={`Your total is $${cart.total}`}

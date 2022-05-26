@@ -11,7 +11,7 @@ export const sliderItems = [
     img: "https://images.pexels.com/photos/1923109/pexels-photo-1923109.jpeg?cs=srgb&dl=pexels-elia-zanrosso-1923109.jpg&fm=jpg",
     title: "WINTER JACKETS COLLECTION",
     desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
-    bg: "#1D52F0C9",
+    bg: "#008080",
   },
   {
     id: 3,
