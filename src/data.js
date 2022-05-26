@@ -16,7 +16,7 @@ export const sliderItems = [
   {
     id: 3,
     img: "https://images.pexels.com/photos/1500482/pexels-photo-1500482.jpeg?cs=srgb&dl=pexels-alasdair-braxton-1500482.jpg&fm=jpg",
-    title: "LOUNGEWEAR LOVE",
+    title: "WOMEN'S FAVORITE",
     desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
     bg: "#FF9E61A8",
   },
