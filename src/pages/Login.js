@@ -11,7 +11,7 @@ const Container = styled.div`
       rgba(255, 255, 255, 0.5),
       rgba(255, 255, 255, 0.5)
     ),
-    url("https://images.pexels.com/photos/6984650/pexels-photo-6984650.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+    url("https://images.pexels.com/photos/1036856/pexels-photo-1036856.jpeg?cs=srgb&dl=pexels-artem-beliaikin-1036856.jpg&fm=jpg")
       center;
   display: flex;
   align-items: center;
