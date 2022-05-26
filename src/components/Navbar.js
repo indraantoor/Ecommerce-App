@@ -8,6 +8,10 @@ import { Link } from "react-router-dom";
 
 const Container = styled.div`
   height: 60px;
+
+  a {
+    text-decoration: none;
+  }
   ${mobile({ height: "50px" })}
 `;
 
@@ -85,8 +89,12 @@ const Navbar = () => {
           <Logo>Indraan.</Logo>
         </Center>
         <Right>
-          <MenuItem>REGISTER</MenuItem>
-          <MenuItem>SIGN IN</MenuItem>
+          <Link to="/register">
+            <MenuItem>REGISTER</MenuItem>
+          </Link>
+          <Link to="/login">
+            <MenuItem>SIGN IN</MenuItem>
+          </Link>
           <Link to="/cart">
             <MenuItem>
               <Badge badgeContent={quantity} color="primary">
