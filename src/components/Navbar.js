@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 
 const Container = styled.div`
   height: 60px;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.09);
 
   a {
     text-decoration: none;
