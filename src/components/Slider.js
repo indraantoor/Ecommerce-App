@@ -4,6 +4,7 @@ import { useState } from "react";
 import { sliderItems } from "../data";
 import { mobile } from "../responsive";
 import { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 
 const Container = styled.div`
   width: 100%;
@@ -21,6 +22,7 @@ const Arrow = styled.div`
   border-radius: 50%;
   display: flex;
   align-items: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   justify-content: center;
   position: absolute;
   top: 0;
@@ -31,6 +33,14 @@ const Arrow = styled.div`
   cursor: pointer;
   opacity: 0.5;
   z-index: 2;
+
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+  &:active {
+    transform: scale(0.97);
+  }
 `;
 
 const Wrapper = styled.div`
@@ -62,7 +72,8 @@ const Image = styled.img`
 
 const InfoContainer = styled.div`
   flex: 1;
-  padding: 50px;
+  height: 100%;
+  padding: 300px 50px 50px 50px;
 `;
 
 const Title = styled.h1`
@@ -70,17 +81,28 @@ const Title = styled.h1`
 `;
 
 const Desc = styled.p`
-  margin: 50px 0px;
+  margin: 30px 0px;
   font-size: 20px;
   font-weight: 500;
   letter-spacing: 3px;
 `;
 
 const Button = styled.button`
-  padding: 10px;
+  padding: 15px 30px 15px 30px;
   font-size: 20px;
-  background-color: transparent;
+  background-color: black;
+  color: white;
   cursor: pointer;
+  border: 2px solid black;
+  border-radius: 6px;
+
+  &:hover {
+    background-color: rgba(1, 1, 1, 0.9);
+  }
+
+  &:active {
+    transform: scale(0.98);
+  }
 `;
 
 const Slider = () => {
@@ -132,7 +154,9 @@ const Slider = () => {
             <InfoContainer>
               <Title>{item.title}</Title>
               <Desc>{item.desc}</Desc>
-              <Button>SHOP NOW</Button>
+              <Link to="/products">
+                <Button>SHOP NOW</Button>
+              </Link>
             </InfoContainer>
           </Slide>
         ))}
