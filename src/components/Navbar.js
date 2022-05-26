@@ -3,8 +3,9 @@ import styled from "styled-components";
 import { Search, ShoppingCartOutlined } from "@material-ui/icons";
 import Badge from "@material-ui/core/Badge";
 import { mobile } from "../responsive";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
+import { logout } from "../redux/userRedux";
 
 const Container = styled.div`
   height: 60px;
@@ -76,11 +77,16 @@ const MenuItem = styled.div`
 `;
 
 const Navbar = () => {
-  const user = JSON.parse(localStorage.getItem("persist:root"))?.user;
-  const currentUser = user && JSON.parse(user).currentUser;
+  const currentUser = useSelector((state) => state.user.currentUser);
   const isLoggedIn = currentUser ? true : false;
-
+  const dispatch = useDispatch();
   const quantity = useSelector((state) => state.cart.quantity);
+
+  const handleClick = (e) => {
+    e.preventDefault();
+    dispatch(logout());
+  };
+
   return (
     <Container>
       <Wrapper>
@@ -102,7 +108,7 @@ const Navbar = () => {
           </Link>
           <Link to="/login">
             {isLoggedIn ? (
-              <MenuItem>SIGN OUT</MenuItem>
+              <MenuItem onClick={(e) => handleClick(e)}>SIGN OUT</MenuItem>
             ) : (
               <MenuItem>SIGN IN</MenuItem>
             )}
