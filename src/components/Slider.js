@@ -3,6 +3,7 @@ import { ArrowLeftOutlined, ArrowRightOutlined } from "@material-ui/icons";
 import { useState } from "react";
 import { sliderItems } from "../data";
 import { mobile } from "../responsive";
+import { useEffect, useRef } from "react";
 
 const Container = styled.div`
   width: 100%;
@@ -50,10 +51,13 @@ const Slide = styled.div`
 const ImgContainer = styled.div`
   height: 100%;
   flex: 1;
+  background-color: rgba(1, 1, 1, 0.8);
 `;
 
 const Image = styled.img`
-  height: 80%;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 `;
 
 const InfoContainer = styled.div`
@@ -81,11 +85,36 @@ const Button = styled.button`
 
 const Slider = () => {
   const [slideIndex, setSlideIndex] = useState(0);
+  const totalElements = sliderItems.length;
+  const delay = 2500;
+  const timeoutRef = useRef(null);
+
+  function resetTimeout() {
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+    }
+  }
+
+  useEffect(() => {
+    resetTimeout();
+    timeoutRef.current = setTimeout(
+      () =>
+        setSlideIndex((prevIndex) =>
+          prevIndex === totalElements - 1 ? 0 : prevIndex + 1
+        ),
+      delay
+    );
+
+    return () => {
+      resetTimeout();
+    };
+  }, [slideIndex, totalElements]);
+
   const handleClick = (direction) => {
     if (direction === "left") {
-      setSlideIndex(slideIndex > 0 ? slideIndex - 1 : 2);
+      setSlideIndex(slideIndex > 0 ? slideIndex - 1 : totalElements - 1);
     } else {
-      setSlideIndex(slideIndex < 2 ? slideIndex + 1 : 0);
+      setSlideIndex(slideIndex < totalElements - 1 ? slideIndex + 1 : 0);
     }
   };
 

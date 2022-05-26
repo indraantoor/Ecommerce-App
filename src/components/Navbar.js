@@ -11,6 +11,7 @@ const Container = styled.div`
 
   a {
     text-decoration: none;
+    color: black;
   }
   ${mobile({ height: "50px" })}
 `;
@@ -74,6 +75,10 @@ const MenuItem = styled.div`
 `;
 
 const Navbar = () => {
+  const user = JSON.parse(localStorage.getItem("persist:root"))?.user;
+  const currentUser = user && JSON.parse(user).currentUser;
+  const isLoggedIn = currentUser ? true : false;
+
   const quantity = useSelector((state) => state.cart.quantity);
   return (
     <Container>
@@ -86,14 +91,20 @@ const Navbar = () => {
           </SearchContainer>
         </Left>
         <Center>
-          <Logo>Indraan.</Logo>
+          <Link to="/">
+            <Logo>Indraan's Store.</Logo>
+          </Link>
         </Center>
         <Right>
           <Link to="/register">
-            <MenuItem>REGISTER</MenuItem>
+            {!isLoggedIn && <MenuItem>REGISTER</MenuItem>}
           </Link>
           <Link to="/login">
-            <MenuItem>SIGN IN</MenuItem>
+            {isLoggedIn ? (
+              <MenuItem>SIGN OUT</MenuItem>
+            ) : (
+              <MenuItem>SIGN IN</MenuItem>
+            )}
           </Link>
           <Link to="/cart">
             <MenuItem>

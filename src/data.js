@@ -1,21 +1,28 @@
 export const sliderItems = [
   {
     id: 1,
-    img: "https://i.ibb.co/cXFnLLV/3.png",
+    img: "https://images.pexels.com/photos/1852382/pexels-photo-1852382.jpeg?cs=srgb&dl=pexels-lucas-queiroz-1852382.jpg&fm=jpg",
     title: "SUMMER SALE",
     desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
     bg: "#f5fafd",
   },
   {
     id: 2,
-    img: "https://i.ibb.co/DG69bQ4/2.png",
+    img: "https://images.pexels.com/photos/1923109/pexels-photo-1923109.jpeg?cs=srgb&dl=pexels-elia-zanrosso-1923109.jpg&fm=jpg",
     title: "AUTUMN COLLECTION",
     desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
     bg: "#fcf1ed",
   },
   {
     id: 3,
-    img: "https://i.ibb.co/cXFnLLV/3.png",
+    img: "https://images.pexels.com/photos/1500482/pexels-photo-1500482.jpeg?cs=srgb&dl=pexels-alasdair-braxton-1500482.jpg&fm=jpg",
+    title: "LOUNGEWEAR LOVE",
+    desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
+    bg: "#fbf0f4",
+  },
+  {
+    id: 4,
+    img: "https://images.pexels.com/photos/7063781/pexels-photo-7063781.jpeg?cs=srgb&dl=pexels-dziana-hasanbekava-7063781.jpg&fm=jpg",
     title: "LOUNGEWEAR LOVE",
     desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
     bg: "#fbf0f4",
